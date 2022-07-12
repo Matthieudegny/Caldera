@@ -29,18 +29,19 @@ function listPrintersInTheStock () {
 //Question n°4) (20min)
 //about me this.brand value is undefined, because of the fulfillInks 's scope. this is used inside so cant reach the value outside.
 //2 solutions:
-// fulfillInks() {
-//     this.inks.forEach(function(ink) {
-//     console.log(`${printer.brand} printer : ${ink} ink fulfilled. `);
-//     });
-// };
+fulfillInks() {
+    this.inks.forEach(function(ink) {
+    console.log(`${printer.brand} printer : ${ink} ink fulfilled. `);
+    });
+};
 //or use .bind() and link this to brand
-//const boundGetBrand = brand.bind(printer)
+const boundGetBrand = brand.bind(printer)
 
 //Question n°5) (10min)
 //declarePrinter is a function, but i don't see any declaration of this function before, 
 //only: const [declarePrinter, setPrinterName] = usePrinter(); which look's like a state React hook but without the useState() at the end
 //so i would say console.log(declarePrinter()); would give a null result.
+
 
 //Question n°6) (5min)
 //to change the value of name declared in usePrinter(), i would use a parameter
@@ -101,7 +102,7 @@ async function fetchUser() {
 
 
 //Question n°11) (20min)
-//i didnt understant the exemple, how severals return can be present in the function printJobs, for me one return stop the function 
+//i didnt understant the exemple, how severals return can be present in the function printJobs, for me if one return is reach that will stop the function.
 //so i created an async arrow function with a try and catch;
 //i started with a variable which stock the result of printOneJob,
 //and if reponse is true i return printAnotherJob()
@@ -136,5 +137,3 @@ function reverseString(str) {
 //(25min)
 //i made some research about how play with listeners, but i didnt manage to find a way to have two listeners at the same time
 
-
-/*Style*/
