@@ -1,0 +1,96 @@
+body{
+    background-color: rgb(199, 190, 190);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-printer{
+    width: 500px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+/*top container*/
+.container-printer-top{
+    display: flex;
+    align-items: center;
+    height: 40%;
+    width: 60%;
+    padding: 3%;
+}
+.container-printer-top img{
+    width: 50px;
+    height: 50px;
+    padding: 4%;
+    margin: 2%;
+    border-radius: 4px;
+    background-color: rgb(199, 190, 190);
+}
+.container-printer-top-brand{
+    display: flex;
+    flex-direction: column;
+    font-size: 2vw;
+    margin-left: 4%;
+    line-height: 170%;
+    color: gray;
+}
+.container-printer-top-brand strong{
+    font-size: 2.5vw;
+    color: black;
+}
+
+/*bottom container*/
+.container-printer-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.container-printer-bottom-color{
+    display: flex;
+    width: 50%;
+    margin-left: 3%;
+}
+.colors{
+    margin: 0 3%;
+    padding: 2% 4%;
+    border-radius: 40%;
+    background-color: aqua;
+    color: white;
+}
+.blue{
+    background-color: rgb(44, 166, 214);
+}
+.green{
+    background-color: rgb(14, 131, 14);
+}
+.red{
+    background-color: rgb(182, 32, 32);
+}
+.container-printer-bottom-statePrinting{
+    width: 40%;
+    font-size: 2vw;
+}
+.container-printer-bottom-statePrinting p{
+    margin: 0;
+    margin-bottom: 3%;
+}
+.statePrinting{
+    position: relative;
+    width: 80%;
+    height: 10px;
+    background-color: rgb(190, 180, 180);
+    border-radius: 5px;
+}
+.statePrinting::before{
+    position: absolute;
+    content: '';
+    width: 64%;
+    height: 10px;
+    background-color: rgb(44, 166, 214);
+    border-radius: 5px;
+}
+
+
+/* i spend approximately 25min with the style  */
